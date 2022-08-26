@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color:  #222831;
+    border-radius: 5px;
+    padding: 15px;
+}
+h1{
+    color:  rgb(243, 74, 142);
+    font-size: 35px;
+}
+.result{
+    color:#eee;
+    font-size: 20px;
+    margin: 5% auto;
+    text-align: center;
+}
+input[type="number"]{
+    width: 100px;
+    margin-bottom: 10px;
+    background-color: #eee;
+    padding: 10px;
+    padding-left: 7px;
+    border: none;
+    border-radius: 5px;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 50px;
+}
+#shipping{
+    width: 50%;
+    border: 1px solid #eee;
+    background-color:darkslategray;
+    font-size: 17;
+    text-align: center;
+    color: #eee;
+    margin-bottom: 2%;
+    border-radius: 5px;
+}
+.btn-row{
+    display: flex;
+    flex-direction: row;
+    flex: 50px;
+}
+#cost{
+    flex-wrap: wrap;
+    width: 30%;
+    text-align: center;
+    margin-top: 3%;
+    padding-left: 2px;
+    padding-bottom: 12px;
+    padding-top: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: #eee;
+    cursor: pointer;
+    transition: all .3s; 
+}
+#reset{
+    width: 20%;
+    margin-left: 10px;
+    margin-top: 3%;
+    text-align: center;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    padding-top: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: #eee;
+    cursor: pointer;
+    transition: all .3s;
+}
+.btn-row #cost:hover,
+.btn-row #reset:hover{
+    background-color: #353d49;
+}

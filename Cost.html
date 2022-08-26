@@ -1,0 +1,42 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Billing Cost</title>
+        <link rel="stylesheet" href="css/billing.css">
+    </head>
+    <body>
+        <div class="container" style="width: 26rem; margin:0 auto; margin-top: 60px">
+            <h1>Calculate Your Shipping Cost</h1>
+            <div class="result">
+                <h3>$0</h3>
+            </div>
+
+            <form id="form">
+                <div class="mb">
+                    <input type="number" id="weight" placeholder="Weight">
+                </div>
+
+                <div class="input-row">
+                    <input type="number" id="lenght" placeholder="Length">
+                    <input type="number" id="breadth" placeholder="Breadth">
+                    <input type="number" id="height" placeholder="Height">
+                </div>
+
+                <select id="shipping">
+                    <option value="none">Select a delivery method</option>
+                    <option value="air">Air($5,000)</option>
+                    <option value="sea">Sea($2,000)</option>
+                  </select>
+
+                  <div class="btn-row">
+                    <button id="cost" type="submit">Calculate Cost</buttton>
+                    <button id="reset" type="reset" onclick="window.location.reload()">Reset</button>
+                  </div>
+            </form>
+        </div>
+        <script src="js/billing.js"></script>
+        <script src="https://kit.fontawesome.com/d3794b59e5.js" crossorigin="anonymous"></script>
+    </body>
+</html>
